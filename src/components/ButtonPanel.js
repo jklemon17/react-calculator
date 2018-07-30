@@ -24,19 +24,19 @@ class ButtonPanel extends React.Component {
     return (
       <div className="button-panel">
         <div className="row">
-          {this.buttonGroup1.map(button => <Button name={button} color={ this.orange.includes(button) ? 'orange' : 'gray'} wide={ this.wide.includes(button) ? true : false }/>)}
+          {this.buttonGroup1.map(button => <Button name={button} color={ this.orange.includes(button) ? 'orange' : 'gray'} wide={ this.wide.includes(button) ? true : false } onClick={() => this.props.onClick(button)}/>)}
         </div>
         <div className="row">
-          {this.buttonGroup2.map(button => <Button name={button} color={ this.orange.includes(button) ? 'orange' : 'gray'} wide={ this.wide.includes(button) ? true : false }/>)}
+          {this.buttonGroup2.map(button => <Button name={button} color={ this.orange.includes(button) ? 'orange' : 'gray'} wide={ this.wide.includes(button) ? true : false } onClick={() => this.props.onClick(button)}/>)}
         </div>
         <div className="row">
-          {this.buttonGroup3.map(button => <Button name={button} color={ this.orange.includes(button) ? 'orange' : 'gray'} wide={ this.wide.includes(button) ? true : false }/>)}
+          {this.buttonGroup3.map(button => <Button name={button} color={ this.orange.includes(button) ? 'orange' : 'gray'} wide={ this.wide.includes(button) ? true : false } onClick={() => this.props.onClick(button)}/>)}
         </div>
         <div className="row">
-          {this.buttonGroup4.map(button => <Button name={button} color={ this.orange.includes(button) ? 'orange' : 'gray'} wide={ this.wide.includes(button) ? true : false }/>)}
+          {this.buttonGroup4.map(button => <Button name={button} color={ this.orange.includes(button) ? 'orange' : 'gray'} wide={ this.wide.includes(button) ? true : false } onClick={() => this.props.onClick(button)}/>)}
         </div>
         <div className="row">
-          {this.buttonGroup5.map(button => <Button name={button} color={ this.orange.includes(button) ? 'orange' : 'gray'} wide={ this.wide.includes(button) ? true : false }/>)}
+          {this.buttonGroup5.map(button => <Button name={button} color={ this.orange.includes(button) ? 'orange' : 'gray'} wide={ this.wide.includes(button) ? true : false } onClick={() => this.props.onClick(button)}/>)}
         </div>
       </div>
     );
