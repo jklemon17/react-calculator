@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './Display.css';
 
 class Display extends React.Component {
   constructor(props) {
@@ -14,7 +15,7 @@ class Display extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="display">
         <p>{this.props.result}</p>
       </div>
     )

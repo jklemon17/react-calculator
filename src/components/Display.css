@@ -1,0 +1,12 @@
+.display {
+  display:flex;
+  flex-flow: row nowrap;
+  background-color: gray;
+  height: 100px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10px;
+  /* text-align: right; */
+  justify-content: flex-end;
+}

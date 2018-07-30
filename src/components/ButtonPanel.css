@@ -1,0 +1,10 @@
+.button {
+  height: 100px;
+  width: 25%;
+  color: black;
+  border: 1px solid gray;
+}
+
+.wide {
+  width: 50%;
+}
