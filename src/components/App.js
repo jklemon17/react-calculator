@@ -5,26 +5,25 @@ import './App.css';
 import calculate from '../logic/calculate'
 
 class App extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      result: '0',
-      total: null,
-      next: null,
-      operation: null
-    }
+  state = {
+    // result: 0,
+    total: 0,
+    next: '',
+    operation: null
   }
 
-  handleClick(button) {
-    this.state.result=10000;
+  handleClick = (button) => {
+    this.setState({
+      next: (this.state.next + button),
+    })
   }
-  
+
   render() {
     return (
       <div className="calculator">
         <h1>React Calculator</h1>
-        <Display result={this.state.result}/>
-        <ButtonPanel onClick={button => this.handleClick(button)}/>
+        <Display result={this.state.next ? this.state.next : this.state.total}/>
+        <ButtonPanel onClick={this.handleClick}/>
       </div>
     );
   }
