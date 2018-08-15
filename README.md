@@ -1,6 +1,6 @@
 # README
 
-## Check it out live on Heroku: [React Calculator](https://mern-with-redux-shoppinglist.herokuapp.com/)
+## Check it out live on Heroku: [React Calculator](https://evening-depths-82426.herokuapp.com/)
 
 ## React Calculator
 This is a simple React-based calculator.
